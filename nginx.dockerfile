@@ -15,8 +15,9 @@ COPY www.conf /etc/php/7.3/fpm/pool.d/www.conf
 
 # Reloading the services
 # service restart does not work for php7.3-fpm
-#RUN service php7.3-fpm stop
-#RUN service php7.3-fpm start
+RUN service php7.3-fpm stop
+RUN service php7.3-fpm start
+#RUN service php7.3-fpm status
 #RUN service nginx reload
 
 # Configure root password
