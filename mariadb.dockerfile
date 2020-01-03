@@ -5,6 +5,7 @@
 ENV PACKAGES iputils-ping net-tools 
 
 ENV MYSQL_ROOT_PASSWORD mypass
+ENV MYSQL_DATABASE wordpress 
 
 # Install Packages
 RUN apt-get update && apt-get install -y $PACKAGES
